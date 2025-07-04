@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Awesome Portfolio</title>
+  <!-- Include Tailwind and Epilogue font as above -->
+  <!-- ... (Paste the head code from above here) ... --> 
+   <!-- Google Fonts: Epilogue -->
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
+<!-- Tailwind CDN (for demo, use PostCSS for production) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          pink: '#FDEDF8',
+          floral: '#FFFCF5',
+          dark: '#2D2D2D',
+        },
+        fontFamily: {
+          epilogue: ['Epilogue', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+<!-- Add AOS CSS in <head> -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-[#FCE4EC] font-epilogue text-[#22223B]">
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-8 py-4 bg-white shadow-sm border-b border-[#F8BBD0] text-[#22223B]">
+    <div class="font-bold text-lg">RoeunryaLan</div>
+    <ul class="flex gap-8 text-sm">
+      <li><a href="index.html" class="hover:underline">About</a></li>
+      <li><a href="#case-study" class="hover:underline">Case Study</a></li>
+      <li><a href="#blog" class="hover:underline">Blog</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-[#F8BBD0] min-h-[100vh] flex items-center justify-center py-32 px-4 md:px-8 relative overflow-hidden">
+    <div class="max-w-3xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-12">
+      <!-- Profile Picture with animated border -->
+      <div class="relative group mb-8 md:mb-0" data-aos="fade-down" data-aos-delay="0">
+        <span class="absolute inset-0 rounded-full bg-gradient-to-tr from-[#F8BBD0] to-[#FCE4EC] blur-sm opacity-70 group-hover:scale-110 transition-transform duration-500"></span>
+        <img src="images/pf.jpg" alt="Roeunrya Lan" class="w-36 h-36 rounded-full object-cover border-4 border-white shadow-sm relative z-10">
+      </div>
+      <!-- Personal Info -->
+      <div class="text-center md:text-left">
+        <p class="text-sm mb-3 tracking-wide text-[#6B7280] italic" data-aos="fade-right" data-aos-delay="300">Designing digital dreams into reality</p>
+        <h1 class="text-5xl font-extrabold mb-3 leading-tight" data-aos="zoom-in" data-aos-delay="600">Roeunrya Lan</h1>
+        <div class="flex flex-wrap gap-4 mb-3 text-base text-[#6B7280] justify-center md:justify-start" data-aos="fade-left" data-aos-delay="900">
+          <span>Age: <span class="font-semibold">20</span></span>
+          <span>Occupation: <span class="font-semibold">Student</span></span>
+          <span>Location: <span class="font-semibold">Phnom Penh, Cambodia</span></span>
+        </div>
+        <p class="text-lg mt-4 text-[#22223B] max-w-xl mx-auto md:mx-0 bg-white bg-opacity-60 rounded-lg px-6 py-4 shadow-sm" data-aos="fade-up" data-aos-delay="1200">I'm a student interested in design, technology, and creative problem-solving. I love building beautiful and functional digital experiences. Always eager to learn and grow in the world of digital creation.</p>
+        <div class="mt-8 flex flex-col md:flex-row items-center gap-4" data-aos="flip-up" data-aos-delay="1500">
+          <a href="#case-study" class="px-6 py-2 bg-[#EC407A] text-white rounded-full font-bold shadow-sm hover:bg-[#F8BBD0] hover:text-[#EC407A] transition-colors">Case Study</a>
+          <div class="flex gap-3 mt-2 md:mt-0">
+            <a href="#" class="text-[#22223B] hover:text-[#EC407A] transition-colors" aria-label="Instagram"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg></a>
+            <a href="#" class="text-[#22223B] hover:text-[#EC407A] transition-colors" aria-label="LinkedIn"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><line x1="16" y1="8" x2="16" y2="16"/><line x1="8" y1="8" x2="8" y2="16"/><line x1="12" y1="12" x2="12" y2="16"/></svg></a>
+            <a href="#" class="text-[#22223B] hover:text-[#EC407A] transition-colors" aria-label="Twitter"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9.09 9.09 0 0 1-2.88 1.1A4.48 4.48 0 0 0 16.11 0c-2.5 0-4.5 2.01-4.5 4.5 0 .35.04.7.11 1.03C7.69 5.36 4.07 3.6 1.64.96c-.38.65-.6 1.4-.6 2.2 0 1.52.77 2.86 1.94 3.65A4.48 4.48 0 0 1 .96 6v.06c0 2.13 1.52 3.91 3.54 4.31-.37.1-.76.16-1.16.16-.28 0-.55-.03-.81-.08.55 1.72 2.16 2.97 4.07 3A9.05 9.05 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.22 9.22 0 0 0 23 3z"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study -->
+  <section id="case-study" class="py-20 px-4 md:px-8 bg-[#FFF4FA]">
+    <h2 class="text-center text-3xl font-extrabold mb-14 tracking-tight" data-aos="fade-down" data-aos-delay="0">Case Study</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-4xl mx-auto">
+      <!-- Card 1 -->
+      <div class="relative flex flex-col items-center bg-white rounded-2xl shadow-sm p-10 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md" data-aos="fade-up" data-aos-delay="200">
+        <div class="w-16 h-1 bg-[#F8BBD0] rounded-full mb-6"></div>
+        <img src="images/case1.jpg" alt="Roeunrya Lan" class="w-40 h-40 object-cover rounded-xl shadow-sm mb-8 border-4 border-[#F8BBD0]">
+        <h3 class="text-xl font-bold mb-3">SPC: Smart Planner Companion</h3>
+        <p class="text-base text-[#6B7280] mb-6 text-center">SPC is more than just a planner; it's your intelligent AI partner that proactively anticipates your day, understands your unique focus patterns, and effortlessly guides you into deep work. Experience a seamless flow where productivity feels natural, not forced, as SPC adapts to you, making every day your most efficient yet.</p>
+        <a href="https://www.figma.com/board/r6sjurkV4Jkefk6pSFKeFo/Roeunrya_Lan__PROTOTYPING?node-id=0-1&p=f&t=gSF7UAStnWEm5hVb-0" target="_blank" rel="noopener" class="inline-block px-6 py-2 bg-[#EC407A] text-white font-semibold rounded-full shadow-sm hover:bg-[#F8BBD0] hover:text-[#EC407A] transition-colors text-base mb-2">Try it out here!</a>
+      </div>
+      <!-- Card 2 -->
+      <div class="relative flex flex-col items-center bg-white rounded-2xl shadow-sm p-10 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md" data-aos="fade-up" data-aos-delay="400">
+        <div class="w-16 h-1 bg-[#F8BBD0] rounded-full mb-6"></div>
+        <img src="images/case2.jpg" alt="Process" class="w-40 h-40 object-cover rounded-xl shadow-sm mb-8 border-4 border-[#F8BBD0]">
+        <h3 class="text-xl font-bold mb-3">User Journey</h3>
+        <p class="text-base text-[#6B7280] mb-6 text-center">I've learned the core UX design principles focused on visualizing user interaction. This involves learning to map out a user's entire experience, from a high-level journey to detailed, moment-by-moment interactions through storyboarding.</p>
+        <a href="https://www.figma.com/board/skFMoFOHAJdWpHblQ8weni/Roeunrya_Lan_UserJourney?node-id=0-1&p=f&t=OfsRQZBHjbozZpPP-0" target="_blank" rel="noopener" class="inline-block px-6 py-2 bg-[#EC407A] text-white font-semibold rounded-full shadow-sm hover:bg-[#F8BBD0] hover:text-[#EC407A] transition-colors text-base mb-2">Learn more here!</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog" class="py-20 px-4 md:px-8 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-center text-3xl font-extrabold mb-14 tracking-tight" data-aos="fade-down" data-aos-delay="0">Blog</h2>
+      <article class="bg-[#FFF4FA] rounded-2xl shadow-sm p-10" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-2xl font-bold mb-2 text-[#22223B]">What Is Human-Computer Interaction (HCI)?</h3>
+        <p class="text-sm text-[#6B7280] mb-6 italic">By Roeunrya</p>
+        <p class="text-base text-[#6B7280] leading-relaxed mb-6">HCI is the study of how people interact with computers and how to design technology that's easy to use, effective, and accessible. It blends computer science, psychology, and design to improve user experience.</p>
+        <a href="blog-post.html" class="text-[#EC407A] font-semibold hover:text-[#B83260] transition-colors">Read more...</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#F8BBD0] bg-white py-8 text-center">
+    <div class="text-lg font-bold mb-1">RoeunryaLan</div>
+    <div class="text-xs text-gray-400 mb-2">&copy; 2024 My Awesome Portfolio</div>
+    <a href="#top" class="text-[#EC407A] text-xs underline hover:text-[#B83260] transition-colors">Back to top</a>
+  </footer>
+  <!-- Add AOS JS before </body> -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ once: false });</script>
+</body>
+</html>
